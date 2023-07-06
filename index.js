@@ -10,6 +10,10 @@ Habilitar Pug:
 app.set('view engine', 'pug');
 app.set('views', './views');
 
+//Csrpeta Publica
+
+app.use(express.static('public'));
+
 
 app.use('/auth', usuarioRoutes)
 
