@@ -1,10 +1,9 @@
 const express = require('express')
+const { formularioLogin } = require('../controllers/ususarioController.js')
 
 const router = express.Router();
 
-router.get('/login', (req,res) => {
-    res.render('auth/login')
-})
+router.get('/login', formularioLogin)
 
 
 module.exports = router
