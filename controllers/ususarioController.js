@@ -1,9 +1,11 @@
 
-const formularioLogin =( (req, res) => {
+const formularioLogin = ( (req, res) => {
     res.render('auth/login')
 });
-const formularioRegistro =( (req, res) => {
-    res.render('auth/registro')
+const formularioRegistro = ( (req, res) => {
+    res.render('auth/registro', {
+        pagina: 'Crear cuenta'
+    })
 });
 
 module.exports = {
